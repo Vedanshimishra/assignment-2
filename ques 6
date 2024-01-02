@@ -1,0 +1,43 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+
+    // Get the size of the diamond
+    cout << "Enter the size of the diamond: ";
+    cin >> n;
+
+    // Upper part of the diamond
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n - i; ++j)
+            cout << "*\t";
+
+        for (int k = 0; k < 2 * i; ++k)
+            cout << "\t";
+
+        for (int l = 0; l < n - i; ++l)
+            cout << "*\t";
+
+        cout << endl;
+    }
+
+   
+    for (int i = n - 2; i >= 0; --i) {
+        for (int j = 0; j < n - i; ++j)
+            cout << "*\t";
+
+        for (int k = 0; k < 2 * i; ++k)
+            cout << "\t";
+
+        for (int l = 0; l < n - i; ++l)
+            cout << "*\t";
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
