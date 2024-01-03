@@ -5,20 +5,20 @@ int main(int argc, char** argv) {
     int n;
     cin >> n;
 
-    // Check if n is odd
+   
     if (n % 2 == 0) {
         cout << "Invalid input. Please enter an odd number." << endl;
-        return 1; // Return an error code
+        return 1; 
     }
 
-    // Print the pattern
+   
     for (int i = 1; i <= n; ++i) {
-        // Print spaces for the upper part of the pattern
+      
         for (int j = 1; j <= n - i; ++j) {
             cout << "\t";
         }
 
-        // Print '*' for the current row
+       
         for (int j = 1; j <= 2 * i - 1; ++j) {
             cout << "*\t";
         }
@@ -26,5 +26,5 @@ int main(int argc, char** argv) {
         cout << endl;
     }
 
-    return 0; // Return success code
+    return 0;
 }
